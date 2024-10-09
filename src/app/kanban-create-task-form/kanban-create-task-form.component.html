@@ -1,0 +1,22 @@
+<form class="sticky" [formGroup]="taskForm" (ngSubmit)="saveTask()">
+    <div>
+        <label for="taskName">Task Name</label>
+        <input id="taskName" formControlName="taskName">
+    </div>
+    <div>
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description"></textarea>
+    </div>
+    <div>
+        <label for="createdDate">Start Date</label>
+        <input type="date" id="createdDate" formControlName="createdDate">
+    </div>
+    <div>
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" formControlName="dueDate">
+        <div *ngIf="taskForm?.get('dueDate')?.hasError('required') && taskForm?.get('dueDate')?.touched">
+            <small class="error">Due date is required</small>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

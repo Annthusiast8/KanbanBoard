@@ -1,0 +1,142 @@
+.dashboard {
+    position: relative;
+    box-sizing: border-box;
+    width: auto;
+  }
+
+  .logout {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* changed from left: 1288px to right: 20px */
+    display: flex;
+    justify-content: center;
+    padding: 8px 16px; /* added padding */
+    border: none;
+    font-size: small;
+    background-color: #282828; /* changed to a darker gray color */
+    font-family: montserrat;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #fff; /* changed to white */
+    cursor: pointer; /* added cursor pointer */
+  }
+  
+  .logout:hover {
+    background-color: #FF7777; /* added hover effect */
+  }
+
+.kanban-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 100px;
+    height: 90vh;
+    width: 600px;
+  }
+  
+  .example-list {
+    width: calc(33.33% - 16px);
+    margin: 8px;
+    background-color: #404258;
+    border-radius: 25px;
+    padding: 40px;
+  }
+  
+  /* Media queries */
+  
+  /* Large screens */
+  @media (min-width: 1200px) {
+    .kanban-board {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .kanban-board {
+      width: 992px;
+      margin: 0 auto;
+    }
+    .example-list {
+      width: calc(50% - 16px);
+    }
+  }
+  
+  /* Small screens */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .kanban-board {
+      width: 768px;
+      margin: 0 auto;
+    }
+    .example-list {
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+  
+  /* Extra small screens */
+  @media (max-width: 767px) {
+    .kanban-board {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .example-list {
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+  
+  .add-icon {
+    position: absolute; /* changed to absolute */
+    padding: 8px 16px; /* kept padding */
+    border: none;
+    font-size: small;
+    background-color: #6D9886; /* kept the green color */
+    font-family: montserrat; /* kept font family */
+    font-weight: 600; /* kept font weight */
+    border-radius: 10px; /* kept border radius */
+    color: #3B5249; /* kept white text color */
+    cursor: pointer; /* kept cursor pointer */
+    top: 60px; /* changed to 50% to center vertically */
+    left: 50%; /* added to center horizontally */
+    transform: translate(-50%, -50%); /* added to center the button */
+    margin: 0 auto; /* added to make it responsive */
+    max-width: 130px; /* added to set a maximum width */
+  }
+    
+  .add-icon:hover {
+    background-color: #9DC6A7; /* kept hover effect */
+  }
+
+.column-lenght {
+    margin-left: -24px;
+    background-color: #EEEEEE;
+    margin-top: -42px;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #50577A;
+  }
+
+
+.h2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -35px;
+  color: #F7F7F7;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: montserrat;
+  flex: 1;
+}

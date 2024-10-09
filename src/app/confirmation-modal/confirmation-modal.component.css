@@ -1,0 +1,46 @@
+.modal-title {
+    font-size: large;
+    font-weight: 600;
+    color: #404258;
+    font-family: Montserrat;
+}
+
+.modal-body {
+    font-size: small;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #101011;
+}
+
+.close {
+    border-radius: 10px;
+    height: 20px;
+    top: 20px;
+    color: #171515;
+    font-size: large;
+}
+
+.modal-footer {
+    border-top: 1px solid #D8DEE4;
+    background-color: #FFFFFF;
+}
+
+.submit1 {
+    color: #fefefe;
+    background-color: #02020b;
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    font-size: smaller;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+/* Make the modal responsive */
+@media (max-width: 600px) {
+    .modal-content {
+        margin: 20px;
+        padding: 16px;
+    }
+}
